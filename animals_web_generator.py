@@ -78,7 +78,8 @@ def save_html(output_path, content):
         output_file.write(content)
 
 
-if __name__ == "__main__":
+
+def main():
     # Load the animal data from the JSON file
     animals_data = load_data('animals_data.json')
 
@@ -98,3 +99,7 @@ if __name__ == "__main__":
     save_html('animals.html', final_html_content)
 
     print("HTML file generated: animals.html")
+
+
+if __name__ == "__main__":
+    main()
